@@ -1,3 +1,4 @@
+#
 def localidade():
     while True:
         entrada = input("Indique a velocidade em que circulava: ").strip().lower()
