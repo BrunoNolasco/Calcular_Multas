@@ -10,7 +10,27 @@ def localidade():
     else:
         print("estava dentro do limite de velocidade.")
 
-localidade()
+def fora_localidade():
+    velocidade = int(input("Indique a velocidade em que circulava: "))
+    if velocidade > 90 and velocidade < 120:
+        print(f"A multa para a velocidade de {velocidade}km/h fora de uma localidade é de €60.")
+    elif velocidade >= 120:
+        print(f"A multa para a velocidade de {velocidade}km/h fora de uma localidade é de €120.")
+    else:
+        print("estava dentro do limite de velocidade.")
+
+def autoestrada():
+    velocidade = int(input("Indique a velocidade em que circulava: "))
+    if velocidade > 120 and velocidade < 150:
+        print(f"A multa para a velocidade de {velocidade}km/h numa autoestrada é de €60.")
+    elif velocidade >= 150 and velocidade < 175:
+        print(f"A multa para a velocidade de {velocidade}km/h numa autoestrada é de €120.")
+    elif velocidade >= 175:
+        print(f"A multa para a velocidade de {velocidade}km/h numa autoestrada é de €360.")
+    else:
+        print("estava dentro do limite de velocidade.")
+
+
 
 #while True:    
 #        
